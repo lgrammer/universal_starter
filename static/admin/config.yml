@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: lpgcode/universal_compliance
+  repo: lpgcode/universal_starter
   branch: master
   commit_messages:
     create: "Create {{collection}} “{{slug}}”"
