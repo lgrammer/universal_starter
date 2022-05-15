@@ -1,17 +1,26 @@
 @import "~bulma/sass/utilities/initial-variables"
 
 // Config vars
-// Kaldi logo brand color: #FD461E
-$kaldi-red: #D64000
-$kaldi-red-invert: #fff
-
-$primary: $kaldi-red
-$primary-invert: $kaldi-red-invert
+// Kaldi logo brand color:  #2b2523
 $body-color: #333
 $black: #2b2523
 
+
+
 .navbar .navbar-menu
   box-shadow: none !important
+  margin: 30px
+  font-weight: bold
+
+
+
+.logo-custom
+  width: 100%
+  height: auto
+
+  margin: 0 auto
+
+  display: block
 
 .content .taglist
   list-style: none
@@ -41,6 +50,12 @@ $black: #2b2523
   display: flex
   justify-content: center
   align-items: center
+  background: rgba(0, 0, 0, .65)
+  background-blend-mode: darken
+
+.borderbot
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+  
 
 .full-width-image
     width: 100vw
@@ -50,6 +65,10 @@ $black: #2b2523
     display: flex
     justify-content: center
     align-items: center
+    background: rgba(0, 0, 0, .65)
+    background-blend-mode: darken
+
+
 
 .btn
     display: inline-block
@@ -61,10 +80,10 @@ $black: #2b2523
     border-radius: .25rem
     text-decoration: none
     font-weight: 700
-    color: #CC3700
+    color: #6C63FF
     text-align: center
-    -webkit-box-shadow: inset 0 0 0 2px #CC3700
-    box-shadow: inset 0 0 0 2px #f40
+    -webkit-box-shadow: inset 0 0 0 2px #6C63FF
+    box-shadow: inset 0 0 0 2px #6C63FF
     -webkit-transition: all .15s ease
     transition: all .15s ease
 
@@ -72,14 +91,13 @@ $black: #2b2523
   margin-top: 0 !important
 
 .navbar-item .icon
-  color: $primary
+  height: auto
+  width: auto
+  color: $black
 // Override for use of svg's from https://simpleicons.org/
-.icon svg
-  width: 1.5rem
-  height: 1.5rem
-  fill: currentColor
+
 .navbar-brand .navbar-item.logo
-  padding: 0 1rem
+  height: 500px
 footer.footer
   padding: 3rem 0rem 0rem
   background-color: transparent
@@ -88,9 +106,7 @@ footer.footer
 $menu-item-color: $white-ter
 $menu-item-hover-color: $black !important
 $menu-item-hover-background-color: $black
-$menu-item-active-color: $kaldi-red-invert
-$menu-item-active-background-color:	$kaldi-red-invert
-$menu-list-border-left: 1px solid $kaldi-red-invert
+
 $menu-label-color: $white-ter
 
 
@@ -111,7 +127,12 @@ $menu-label-color: $white-ter
     height: 1em
     vertical-align: middle
     display: inline
-
+  
+.subwords
+  font-size: .8em
+  text-align: center
+  -webkit-text-stroke-width: 1px
+  -webkit-text-stroke-color: black
 // blog roll
 .blog-list-item.is-featured
   background-color: #d6400033
@@ -121,15 +142,30 @@ $menu-label-color: $white-ter
 .blog-list-item .featured-thumbnail
   flex-basis: 35%
   margin: 0 1.5em 0 0
-
-
+.headwords
+  margin-top: 20px
+  width: 70%
+  text-align: center
+  -webkit-text-stroke-width: 1px
+  -webkit-text-stroke-color: black
 @import "~bulma"
+
+
 
 
 // responsiveness
 +tablet-only
   .blog-list-item .featured-thumbnail
     flex-basis: 50%
+
+  .navbar
+    display: flex
+    justify-content: center
+    align-items: center
+  .logo-custom
+    justify-content: center
+    align-items: center
+    padding-left: 180px
 
 +mobile
   .blog-list-item header
@@ -138,3 +174,28 @@ $menu-label-color: $white-ter
     text-align: center
     max-width: 70%
     margin: 0 0 1em
+  .navbar-burger
+    margin:0
+    padding: 0
+  .navbar
+    margin: 0
+    padding: 0
+  .burger
+    margin: 0
+    padding: 0
+  .navbar
+    display: flex
+    justify-content: center
+    align-items: center
+  .container
+    margin-left: 0
+    padding-left: 0
+  .logo-custom
+    margin: 0 auto
+    padding-left: 0
+
+  .subwords
+    font-size: .8em
+    text-align: center
+    -webkit-text-stroke-width: 1px
+    -webkit-text-stroke-color: black

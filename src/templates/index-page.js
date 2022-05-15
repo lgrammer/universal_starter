@@ -22,7 +22,9 @@ export const IndexPageTemplate = ({
 
   return (
     <div>
+      <div className="image-overlay">
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
+      </div>
       <section className="section section--gradient">
         <div className="container">
           <div className="section">
@@ -39,17 +41,15 @@ export const IndexPageTemplate = ({
                   </div>
                   <div className="columns">
                     <div className="column is-12">
-                      <h3 className="has-text-weight-semibold is-size-2">
-                        {heading}
-                      </h3>
+                
                       <p>{description}</p>
                     </div>
                   </div>
-                  <Features gridItems={intro.blurbs} />
+                  
                   <div className="columns">
                     <div className="column is-12 has-text-centered">
                       <Link className="btn" to="/products">
-                        See all products
+                        See all products & services
                       </Link>
                     </div>
                   </div>

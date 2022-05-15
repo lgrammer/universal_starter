@@ -1,21 +1,15 @@
 ---
 templateKey: index-page
-title: Great coffee with a conscience
+title: INCREASE YOUR ORGANIZATIONAL PROFITABILITY AND SUSTAINABILITY
 image: /img/home-jumbotron.jpg
-heading: Great coffee with a conscience
-subheading: Support sustainable farming while enjoying a cup
+heading: INCREASE YOUR ORGANIZATIONAL PROFITABILITY AND SUSTAINABILITY
+subheading: You have requirements. We have solutions. 
 mainpitch:
-  title: Why Kaldi
+  title: Why Universal Compliance
   description: >
-    Kaldi is the coffee store for everyone who believes that great coffee
-    shouldn't just taste good, it should do good too. We source all of our beans
-    directly from small scale sustainable farmers and make sure part of the
-    profits are reinvested in their communities.
+    Universal Compliance helps companies grow revenue by providing a variety of business solutions tailored to the indvidual needs of their organizations - from compliance, design, marketing, and development.
 description: >-
-  Kaldi is the ultimate spot for coffee lovers who want to learn about their
-  java’s origin and support the farmers that grew it. We take coffee production,
-  roasting and brewing seriously and we’re glad to pass that knowledge to
-  anyone.
+  Our products and services vary depending on the needs of each customer. Universal Compliance likes to use common database platforms and work within Microsoft technological infrastructure because it is very common to many of our customers.
 intro:
   blurbs:
     - image: /img/coffee.png
