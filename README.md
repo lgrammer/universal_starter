@@ -1,4 +1,4 @@
 
 Universal Compliance GatsbyJS Mockup Ready @
 
-https://ucteststarter.netlify.app/
+https://ucstarter.netlify.app/
