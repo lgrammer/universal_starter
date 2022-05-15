@@ -36,11 +36,12 @@ const Navbar = class extends React.Component {
 
   render() {
     return (
+      <>
       <nav
-        className="navbar is-transparent"
+        className="navbar"
         role="navigation"
         aria-label="main-navigation"
-      >
+      > <div className="holder">
                     <div
               className={`navbar-burger burger ${this.state.navBarActiveClass}`}
               data-target="navMenu"
@@ -51,38 +52,59 @@ const Navbar = class extends React.Component {
             >            <span />
             <span />
             <span /></div>
+            </div>
         
-        <div className="container">
+        <div className="container mobile">
           
 
             <Link to="/" className="logo-custom" title="Logo">
               <img src={logo3} alt="Kaldi" />
             </Link>
-            {/* Hamburger menu */}
 
-     
-          <div
-            id="navMenu"
-            className={`navbar-menu ${this.state.navBarActiveClass}`}
-          >
-            <div className="navbar-start has-text-centered">
-              <Link className="navbar-item" to="/about">
-                About
-              </Link>
-              <Link className="navbar-item" to="/products">
-                Products & Services
-              </Link>
-              <Link className="navbar-item" to="/blog">
-                Blog
-              </Link>
-              <Link className="navbar-item" to="/contact">
-                Contact
-              </Link>
-        
-            </div>
+            {!this.state.active  ?  <div
+          id="navMenu"
+          className={`navbar-menu ${this.state.navBarActiveClass}`}
+        >
+          <div className="navbar-start has-text-centered">
+            <Link className="navbar-item" to="/about">
+              About
+            </Link>
+            <Link className="navbar-item" to="/products">
+              Products & Services
+            </Link>
+            <Link className="navbar-item" to="/blog">
+              Blog
+            </Link>
+            <Link className="navbar-item" to="/contact">
+              Contact
+            </Link>
+      
           </div>
+        </div> : null}
+  
         </div>
       </nav>
+         {this.state.active  ?  <div
+          id="navMenu"
+          className={`navbar-menu ${this.state.navBarActiveClass}`}
+        >
+          <div className="navbar-start has-text-centered">
+            <Link className="navbar-item" to="/about">
+              About
+            </Link>
+            <Link className="navbar-item" to="/products">
+              Products & Services
+            </Link>
+            <Link className="navbar-item" to="/blog">
+              Blog
+            </Link>
+            <Link className="navbar-item" to="/contact">
+              Contact
+            </Link>
+      
+          </div>
+        </div> : null}
+        </>
     );
   }
 };
